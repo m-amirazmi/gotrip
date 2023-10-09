@@ -14,6 +14,10 @@ interface CategoryTabProps {
    * The tab button size
    */
   size: "small" | "medium";
+  /**
+   * Show the icon on the tab
+   */
+  showIcon: boolean;
 }
 
 interface ICategoryTabItem {
@@ -22,7 +26,11 @@ interface ICategoryTabItem {
   id: string;
 }
 
-export default function CategoryTab({ variant, size }: CategoryTabProps) {
+export default function CategoryTab({
+  variant = "ghost",
+  size = "medium",
+  showIcon = false,
+}: CategoryTabProps) {
   const [list, setList] = useState<ICategoryTabItem[]>([]);
   const [selected, setSelected] = useState<string>("");
 
@@ -47,12 +55,12 @@ export default function CategoryTab({ variant, size }: CategoryTabProps) {
           onClick={() => handleSelected(i.id)}
           className={cx(styles["item"])}
         >
-          {i.icon && (
+          {i.icon && showIcon && (
             <div className={cx(styles["image"])}>
               <Image src={i.icon} alt={i.name} width={25} height={25} />
             </div>
           )}
-          <p>{i.name}</p>
+          {i.name && <p>{i.name}</p>}
         </Button>
       ))}
     </div>

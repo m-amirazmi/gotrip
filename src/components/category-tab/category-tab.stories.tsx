@@ -56,6 +56,7 @@ export const Default: Story = {
   args: {
     variant: "ghost",
     size: "small",
+    showIcon: false,
   },
   render: (args) => {
     return (

@@ -1,0 +1,8 @@
+@import "./vendors/normalize.css";
+@import "./vendors/reset.css";
+@import "./variables/colors.css";
+@import "./variables/border.css";
+
+* {
+  font-family: "Jost Variable", sans-serif;
+}

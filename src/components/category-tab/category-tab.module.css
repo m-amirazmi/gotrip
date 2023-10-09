@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px;
+}
+
+.root p {
+  margin: 0px;
+}
+
+.root .item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

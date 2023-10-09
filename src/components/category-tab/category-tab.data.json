@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "name": "Hotel",
+    "icon": "https://imageupload.io/ib/uCEjhMp7kbCAXtQ_1696820981.webp"
+  },
+  {
+    "id": "2",
+    "name": "Car",
+    "icon": "https://imageupload.io/ib/uCEjhMp7kbCAXtQ_1696820981.webp"
+  },
+  {
+    "id": "3",
+    "name": "Cruise",
+    "icon": "https://imageupload.io/ib/uCEjhMp7kbCAXtQ_1696820981.webp"
+  },
+  {
+    "id": "4",
+    "name": "Flight",
+    "icon": "https://imageupload.io/ib/uCEjhMp7kbCAXtQ_1696820981.webp"
+  }
+]

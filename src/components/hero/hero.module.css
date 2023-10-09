@@ -1,6 +1,46 @@
 .root {
   height: var(--height-hero);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.root .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  margin-top: 100px;
+}
+
+.root .title,
+.root .subtitle {
+  color: var(--color-white);
+}
+
+.root .title span:first-of-type {
+  color: var(--color-yellow);
+}
+
+.root .images {
+  position: absolute;
+  right: 16px;
+  transform: translateY(-55%);
+  display: flex;
+  gap: 32px;
+}
+
+.images .image-small {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.images .image {
+  border-radius: var(--border-radius);
+  object-fit: cover;
 }
 
 .root .bg {

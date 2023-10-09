@@ -1,0 +1,17 @@
+.root {
+  font-family: "Jost Variable", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1.root {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+p.root {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}

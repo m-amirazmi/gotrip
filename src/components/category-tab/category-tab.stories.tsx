@@ -1,12 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import CategoryTab from "./category-tab";
-import mockData from "./category-tab.data.json";
+import mockData from "../../data/homepage.json";
 
 const meta = {
   title: "Shared/Category Tab",
   component: CategoryTab,
   parameters: {
     layout: "centered",
+    nextjs: {
+      appDirectory: true,
+    },
   },
   tags: ["autodocs"],
   argTypes: {
@@ -58,7 +61,7 @@ export const Default: Story = {
     variant: "ghost",
     size: "small",
     showIcon: false,
-    items: mockData,
+    items: mockData.categories,
   },
   render: (args) => {
     return (

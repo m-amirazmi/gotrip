@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "@fontsource-variable/jost";
 import "@/styles/base.css";
+import Header from "@/components/header/header";
+import homepageData from "@/data/homepage.json";
 
 export const metadata: Metadata = {
   title: "GoTrip",
@@ -14,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header categories={homepageData.categories} />
+        {children}
+      </body>
     </html>
   );
 }

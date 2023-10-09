@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./button.module.css";
 import cx from "classnames";
 
@@ -31,6 +32,10 @@ interface ButtonProps {
    */
   className?: string;
   /**
+   * Target link
+   */
+  href?: string;
+  /**
    * Optional click handler
    */
   onClick?: () => void;
@@ -45,24 +50,29 @@ export default function Button({
   isSelected = false,
   className = "",
   onClick,
+  href,
 }: ButtonProps) {
   if (!children) return null;
 
-  const Element = tag;
+  const classes = cx(
+    styles["root"],
+    styles[color],
+    styles[variant],
+    styles[size],
+    isSelected && styles["selected"],
+    className
+  );
+
+  if (tag === "a" && href)
+    return (
+      <Link className={classes} href={href}>
+        {children}
+      </Link>
+    );
 
   return (
-    <Element
-      className={cx(
-        styles["root"],
-        styles[color],
-        styles[variant],
-        styles[size],
-        isSelected && styles["selected"],
-        className
-      )}
-      onClick={onClick}
-    >
+    <button className={classes} onClick={onClick}>
       {children}
-    </Element>
+    </button>
   );
 }

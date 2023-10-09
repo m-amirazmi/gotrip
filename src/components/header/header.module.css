@@ -11,32 +11,11 @@
   gap: 20px;
   padding: 20px 0px;
 }
-.root .currency-country {
-  display: flex;
-  gap: 16px;
-  margin-left: auto;
-}
-
-.root .separator {
-  width: 1px;
-  height: 20px;
-  background-color: var(--color-white-30);
-}
 
 .root .buttons {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-.root .country {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.root .flag {
-  border-radius: 50%;
 }
 
 .sb-root {

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Header from "./header";
 import cx from "classnames";
 import styles from "./header.module.css";
-import mockData from "./header.data.json";
+import mockData from "../../data/homepage.json";
 
 const meta = {
   title: "Shared/Header",

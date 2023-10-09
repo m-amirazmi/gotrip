@@ -9,3 +9,7 @@ input[type="reset"] {
   cursor: pointer;
   outline: inherit;
 }
+
+a {
+  text-decoration: none;
+}

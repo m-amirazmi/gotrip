@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.root .separator {
+  width: 1px;
+  height: 20px;
+  background-color: var(--color-white-30);
+}
+
+.root .country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.root .flag {
+  border-radius: 50%;
+}

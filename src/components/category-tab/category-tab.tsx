@@ -5,7 +5,7 @@ import styles from "./category-tab.module.css";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "../button/button";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 
 interface CategoryTabProps {
   /**
@@ -30,6 +30,7 @@ export interface ICategoryTabItem {
   name: string;
   icon?: string;
   id: string;
+  path: string;
 }
 
 export default function CategoryTab({
@@ -42,14 +43,19 @@ export default function CategoryTab({
   const [selected, setSelected] = useState<string>("");
 
   const router = useRouter();
+  const params = useParams();
 
   useEffect(() => {
     setList(items);
     setSelected(items[0].id);
   }, [items]);
 
-  const handleSelected = (id: string) => {
-    // router.push(`/${id}`);
+  useEffect(() => {
+    console.log(params);
+  }, [params]);
+
+  const handleSelected = ({ id, path }: ICategoryTabItem) => {
+    router.push(path);
     setSelected(id);
   };
 
@@ -64,7 +70,7 @@ export default function CategoryTab({
           variant={variant}
           size={size}
           isSelected={i.id === selected}
-          onClick={() => handleSelected(i.id)}
+          onClick={() => handleSelected(i)}
           className={cx(styles["item"])}
         >
           {i.icon && showIcon && (

@@ -1,11 +1,8 @@
-import Header from "@/components/header/header";
 import Hero from "@/components/hero/hero";
-import homepageData from "@/data/homepage.json";
 
 export default function HomePage() {
   return (
     <main>
-      <Header categories={homepageData.categories} />
       <Hero />
       {/* 1. Category Tabs - (Container) */}
       {/* 2. Hero - (Container)*/}

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import CategoryTab from "./category-tab";
+import mockData from "./category-tab.data.json";
 
 const meta = {
   title: "Shared/Category Tab",
@@ -41,7 +42,7 @@ const DarkBackground = ({ children }: { children: React.ReactNode }) => {
       style={{
         background: "#292c2e",
         height: "20vh",
-        width: "80vw",
+        width: "90vw",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -57,6 +58,7 @@ export const Default: Story = {
     variant: "ghost",
     size: "small",
     showIcon: false,
+    items: mockData,
   },
   render: (args) => {
     return (

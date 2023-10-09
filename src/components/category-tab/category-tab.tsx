@@ -1,11 +1,15 @@
 import cx from "classnames";
 import styles from "./category-tab.module.css";
-import mockData from "./category-tab.data.json";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "../button/button";
+import { useRouter } from "next/router";
 
 interface CategoryTabProps {
+  /**
+   * The list of category item
+   */
+  items: ICategoryTabItem[];
   /**
    * Which category tab variant?
    */
@@ -30,16 +34,22 @@ export default function CategoryTab({
   variant = "ghost",
   size = "medium",
   showIcon = false,
+  items,
 }: CategoryTabProps) {
   const [list, setList] = useState<ICategoryTabItem[]>([]);
   const [selected, setSelected] = useState<string>("");
 
-  useEffect(() => {
-    setList(mockData);
-    setSelected(mockData[0].id);
-  }, []);
+  const router = useRouter();
 
-  const handleSelected = (id: string) => setSelected(id);
+  useEffect(() => {
+    setList(items);
+    setSelected(items[0].id);
+  }, [items]);
+
+  const handleSelected = (id: string) => {
+    router.push(`/${id}`);
+    setSelected(id);
+  };
 
   const tabColor = variant === "ghost" ? "white" : "blue-3";
 
@@ -57,7 +67,7 @@ export default function CategoryTab({
         >
           {i.icon && showIcon && (
             <div className={cx(styles["image"])}>
-              <Image src={i.icon} alt={i.name} width={25} height={25} />
+              <Image src={i.icon} alt={i.name} width={40} height={40} />
             </div>
           )}
           {i.name && <p>{i.name}</p>}

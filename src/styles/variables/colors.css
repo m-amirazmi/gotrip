@@ -20,4 +20,25 @@
   --color-blue-4-20: rgba(5, 16, 54, 0.2);
   --color-yellow-20: rgba(248, 212, 72, 0.2);
   --color-white-20: rgba(255, 255, 255, 0.2);
+
+  --color-blue-1-30: rgba(53, 84, 209, 0.3);
+  --color-blue-2-30: rgba(22, 60, 140, 0.3);
+  --color-blue-3-30: rgba(19, 53, 123, 0.3);
+  --color-blue-4-30: rgba(5, 16, 54, 0.3);
+  --color-yellow-30: rgba(248, 212, 72, 0.3);
+  --color-white-30: rgba(255, 255, 255, 0.3);
+
+  --color-blue-1-40: rgba(53, 84, 209, 0.4);
+  --color-blue-2-40: rgba(22, 60, 140, 0.4);
+  --color-blue-3-40: rgba(19, 53, 123, 0.4);
+  --color-blue-4-40: rgba(5, 16, 54, 0.4);
+  --color-yellow-40: rgba(248, 212, 72, 0.4);
+  --color-white-40: rgba(255, 255, 255, 0.4);
+
+  --color-blue-1-50: rgba(53, 84, 209, 0.5);
+  --color-blue-2-50: rgba(22, 60, 140, 0.5);
+  --color-blue-3-50: rgba(19, 53, 123, 0.5);
+  --color-blue-4-50: rgba(5, 16, 54, 0.5);
+  --color-yellow-50: rgba(248, 212, 72, 0.5);
+  --color-white-50: rgba(255, 255, 255, 0.5);
 }

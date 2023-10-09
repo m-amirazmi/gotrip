@@ -148,6 +148,28 @@
 .ghost.white.selected {
   background-color: var(--color-white-10);
 }
+.text {
+  background-color: transparent;
+  padding: 0px;
+}
+.text.blue-1 {
+  color: var(--color-blue-1);
+}
+.text.blue-2 {
+  color: var(--color-blue-2);
+}
+.text.blue-3 {
+  color: var(--color-blue-3);
+}
+.text.blue-4 {
+  color: var(--color-blue-4);
+}
+.text.yellow {
+  color: var(--color-yellow);
+}
+.text.white {
+  color: var(--color-white);
+}
 
 .sb-root {
   display: flex;

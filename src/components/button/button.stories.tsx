@@ -28,13 +28,14 @@ const meta = {
       },
     },
     variant: {
-      options: ["solid", "outline", "solid-grey", "ghost"],
+      options: ["solid", "outline", "solid-grey", "ghost", "text"],
       control: {
         type: "select",
         labels: {
           solid: "Solid",
           outline: "Outline",
           ghost: "Ghost",
+          text: "Text",
           "solid-grey": "Solid Grey",
         },
       },
@@ -124,6 +125,17 @@ export const SolidGreyBG: Story = {
   args: {
     children: "Find Out More",
     variant: "solid-grey",
+    color: "blue-1",
+    size: "medium",
+    tag: "button",
+    isSelected: false,
+  },
+};
+
+export const TextButton: Story = {
+  args: {
+    children: "Find Out More",
+    variant: "text",
     color: "blue-1",
     size: "medium",
     tag: "button",

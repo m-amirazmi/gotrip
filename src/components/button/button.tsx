@@ -9,7 +9,7 @@ interface ButtonProps {
   /**
    * Choose the button type
    */
-  variant?: "solid" | "outline" | "ghost" | "solid-grey";
+  variant?: "solid" | "outline" | "ghost" | "solid-grey" | "text";
   /**
    * The color of the button
    */

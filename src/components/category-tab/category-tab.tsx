@@ -24,7 +24,7 @@ interface CategoryTabProps {
   showIcon: boolean;
 }
 
-interface ICategoryTabItem {
+export interface ICategoryTabItem {
   name: string;
   icon?: string;
   id: string;

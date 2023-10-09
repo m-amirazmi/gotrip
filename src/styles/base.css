@@ -2,6 +2,7 @@
 @import "./vendors/reset.css";
 @import "./variables/colors.css";
 @import "./variables/border.css";
+@import "./variables/dimensions.css";
 
 * {
   font-family: "Jost Variable", sans-serif;

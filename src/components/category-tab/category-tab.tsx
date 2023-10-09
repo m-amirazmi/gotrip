@@ -1,9 +1,11 @@
+"use client";
+
 import cx from "classnames";
 import styles from "./category-tab.module.css";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "../button/button";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 interface CategoryTabProps {
   /**
@@ -47,7 +49,7 @@ export default function CategoryTab({
   }, [items]);
 
   const handleSelected = (id: string) => {
-    router.push(`/${id}`);
+    // router.push(`/${id}`);
     setSelected(id);
   };
 

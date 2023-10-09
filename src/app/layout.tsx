@@ -14,10 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        HerE?
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

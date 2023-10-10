@@ -3,6 +3,7 @@ import styles from "./hero.module.css";
 import Text from "../text/text";
 import Container from "../container/container";
 import Image from "next/image";
+import Button from "../button/button";
 
 interface HeroProps {}
 
@@ -21,9 +22,7 @@ export default function Hero({}: HeroProps) {
             Checkout Beautiful Places Arround the World.
           </Text>
         </div>
-      </Container>
-      {/* Hero Search */}
-      <Container>
+        {/* Hero Search */}
         <div className={cx(styles["images"])}>
           <Image
             src="https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp"
@@ -48,6 +47,23 @@ export default function Hero({}: HeroProps) {
               className={cx(styles["image"])}
             />
           </div>
+        </div>
+        <div className={cx(styles["search"])}>
+          <div className={cx(styles["input"])}>
+            <Text tag="span">Location</Text>
+            <input placeholder="Where are you going?" />
+          </div>
+          <div className={cx(styles["input"])}>
+            <Text tag="span">Check in - Check out</Text>
+            <input placeholder="Wed 2 Mar - Fri 11 Apr" />
+          </div>
+          <div className={cx(styles["input"])}>
+            <Text tag="span">Guest</Text>
+            <input placeholder="2 adults - 1 children - 1 room" />
+          </div>
+          <Button color="yellow" size="large">
+            Search
+          </Button>
         </div>
       </Container>
       <div className={cx(styles["bg"])}></div>

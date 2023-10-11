@@ -7,7 +7,11 @@ import mockData from "../../data/homepage.json";
 const meta = {
   title: "Shared/Header",
   component: Header,
-  parameters: {},
+  parameters: {
+    nextjs: {
+      appDirectory: true,
+    },
+  },
   tags: ["autodocs"],
   argTypes: {},
 } satisfies Meta<typeof Header>;
@@ -25,7 +29,7 @@ const Background = ({ children }: { children: React.ReactNode }) => {
 
 export const Default: Story = {
   args: {
-    categories: mockData.categories,
+    services: mockData.services,
   },
   render: (args) => {
     return (

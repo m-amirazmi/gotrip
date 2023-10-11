@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header categories={homepageData.categories} />
+        <Header services={homepageData.services} />
         {children}
       </body>
     </html>

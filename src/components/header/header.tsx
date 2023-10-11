@@ -2,7 +2,7 @@
 
 import cx from "classnames";
 import Image from "next/image";
-import CategoryTab, { ICategoryTabItem } from "../category-tab/category-tab";
+import ServiceTab, { IServiceTabItem } from "../service-tab/service-tab";
 import Container from "../container/container";
 import Button from "../button/button";
 import navIcon from "../../assets/nav-icon.webp";
@@ -12,10 +12,10 @@ import CurrencyCountrySwitcher from "../currency-country-switcher/currency-count
 import Link from "next/link";
 
 interface HeaderProps {
-  categories: ICategoryTabItem[];
+  services: IServiceTabItem[];
 }
 
-export default function Header({ categories }: HeaderProps) {
+export default function Header({ services }: HeaderProps) {
   return (
     <header className={cx(styles["root"])}>
       <Container>
@@ -36,12 +36,7 @@ export default function Header({ categories }: HeaderProps) {
         </div>
       </Container>
       <Container>
-        <CategoryTab
-          items={categories}
-          variant="ghost"
-          showIcon
-          size="medium"
-        />
+        <ServiceTab items={services} variant="ghost" showIcon size="medium" />
       </Container>
     </header>
   );

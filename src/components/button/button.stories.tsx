@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Button from "./button";
 import styles from "./button.module.css";
-import iconHotel from "/Users/amiazmi/dev/personal/gotrip/public/assets/icons/category-hotel.webp";
 import Image from "next/image";
 
 const meta = {
@@ -209,7 +208,12 @@ export const SolidButtonWithIcon: Story = {
     return (
       <DarkBackground>
         <Button {...args} className={styles["sb-root"]}>
-          <Image src={iconHotel} alt="icon-hotel" width={25} height={25} />
+          <Image
+            src="https://imageupload.io/ib/gc4DLzbB7Dp2Xi0_1696833972.webp"
+            alt="icon-hotel"
+            width={25}
+            height={25}
+          />
           <span>Hotel</span>
         </Button>
       </DarkBackground>

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import CategoryTab from "./category-tab";
+import ServiceTab from "./service-tab";
 import mockData from "../../data/homepage.json";
 
 const meta = {
-  title: "Shared/Category Tab",
-  component: CategoryTab,
+  title: "Shared/Service Tab",
+  component: ServiceTab,
   parameters: {
     layout: "centered",
     nextjs: {
@@ -34,7 +34,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof CategoryTab>;
+} satisfies Meta<typeof ServiceTab>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -61,12 +61,12 @@ export const Default: Story = {
     variant: "ghost",
     size: "small",
     showIcon: false,
-    items: mockData.categories,
+    items: mockData.services,
   },
   render: (args) => {
     return (
       <DarkBackground>
-        <CategoryTab {...args} />
+        <ServiceTab {...args} />
       </DarkBackground>
     );
   },

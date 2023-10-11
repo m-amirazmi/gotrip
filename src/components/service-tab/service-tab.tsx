@@ -1,45 +1,19 @@
 "use client";
 
 import cx from "classnames";
-import styles from "./category-tab.module.css";
+import styles from "./service-tab.module.css";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "../button/button";
 import { useParams, useRouter } from "next/navigation";
 
-interface CategoryTabProps {
-  /**
-   * The list of category item
-   */
-  items: ICategoryTabItem[];
-  /**
-   * Which category tab variant?
-   */
-  variant: "solid-grey" | "ghost";
-  /**
-   * The tab button size
-   */
-  size: "small" | "medium";
-  /**
-   * Show the icon on the tab
-   */
-  showIcon: boolean;
-}
-
-export interface ICategoryTabItem {
-  name: string;
-  icon?: string;
-  id: string;
-  path: string;
-}
-
-export default function CategoryTab({
+export default function ServiceTab({
   variant = "ghost",
   size = "medium",
   showIcon = false,
   items,
-}: CategoryTabProps) {
-  const [list, setList] = useState<ICategoryTabItem[]>([]);
+}: ServiceTabProps) {
+  const [list, setList] = useState<IServiceTabItem[]>([]);
   const [selected, setSelected] = useState<string>("");
 
   const router = useRouter();
@@ -54,7 +28,7 @@ export default function CategoryTab({
     console.log(params);
   }, [params]);
 
-  const handleSelected = ({ id, path }: ICategoryTabItem) => {
+  const handleSelected = ({ id, path }: IServiceTabItem) => {
     router.push(path);
     setSelected(id);
   };
@@ -83,4 +57,30 @@ export default function CategoryTab({
       ))}
     </div>
   );
+}
+
+interface ServiceTabProps {
+  /**
+   * The list of Service item
+   */
+  items: IServiceTabItem[];
+  /**
+   * Which Service tab variant?
+   */
+  variant: "solid-grey" | "ghost";
+  /**
+   * The tab button size
+   */
+  size: "small" | "medium";
+  /**
+   * Show the icon on the tab
+   */
+  showIcon: boolean;
+}
+
+export interface IServiceTabItem {
+  name: string;
+  icon?: string;
+  id: string;
+  path: string;
 }

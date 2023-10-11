@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
-      {/* 1. Category Tabs - (Container) */}
+      {/* 1. Service Tabs - (Container) */}
       {/* 2. Hero - (Container)*/}
       {/* 3. Brand USP - (Container, Card, Column)  */}
       {/* 4. Popular Destination - (Container, Slider, Card, Title) */}

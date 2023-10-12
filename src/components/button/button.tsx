@@ -13,6 +13,7 @@ export default function Button({
   onClick,
   href,
 }: ButtonProps) {
+  console.log(color);
   if (!children) return null;
 
   const classes = cx(
@@ -50,7 +51,17 @@ interface ButtonProps {
   /**
    * The color of the button
    */
-  color?: "blue-1" | "blue-2" | "blue-3" | "blue-4" | "yellow" | "white";
+  color?:
+    | "blue-1"
+    | "blue-2"
+    | "blue-3"
+    | "blue-4"
+    | "yellow"
+    | "white"
+    | "grey"
+    | "grey-2"
+    | "grey-3"
+    | "green";
   /**
    * How large should the button be?
    */

@@ -20,7 +20,7 @@ export default function ServiceTab({
   const params = useParams();
 
   useEffect(() => {
-    setList(items);
+    setList(() => items.filter((i) => i.enable));
     setSelected(items[0].id);
   }, [items]);
 
@@ -79,6 +79,7 @@ interface ServiceTabProps {
 }
 
 export interface IServiceTabItem {
+  enable: boolean;
   name: string;
   icon?: string;
   id: string;

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Hero from "./hero";
+import content from "../../content/home.content.json";
 
 const meta = {
   title: "Shared/Hero",
@@ -13,7 +14,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: {
+    content: content.hero,
+  },
   render: (args) => {
     return (
       <div style={{ position: "relative" }}>

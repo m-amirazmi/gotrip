@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Header from "./header";
 import cx from "classnames";
 import styles from "./header.module.css";
-import mockData from "../../data/homepage.json";
+import content from "../../content/global.content.json";
 
 const meta = {
   title: "Shared/Header",
@@ -29,7 +29,7 @@ const Background = ({ children }: { children: React.ReactNode }) => {
 
 export const Default: Story = {
   args: {
-    services: mockData.services,
+    services: content.header.services,
   },
   render: (args) => {
     return (

@@ -1,18 +1,12 @@
 import Hero from "@/components/hero/hero";
-import pageContent from "@/content/page.home.json";
-import { homepageSections as sections } from "@/components/";
+import ServiceTab from "@/components/service-tab/service-tab";
+import content from "@/content/home.content.json";
 
 export default function HomePage() {
-  console.log("trigger here?");
   return (
     <main>
-      {pageContent.sections.map((i) => {
-        const Component = sections[i];
-        if (!Component) return null;
-        return <Component key={i} />;
-      })}
-      {/* 1. Service Tabs - (Container) */}
       {/* 2. Hero - (Container)*/}
+      <Hero content={content.hero} />
       {/* 3. Brand USP - (Container, Card, Column)  */}
       {/* 4. Popular Destination - (Container, Slider, Card, Title) */}
       {/* 5. Best Seller - (Container, Slider, Card, Title) */}

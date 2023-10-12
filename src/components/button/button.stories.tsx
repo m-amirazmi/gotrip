@@ -40,7 +40,18 @@ const meta = {
       },
     },
     color: {
-      options: ["blue-1", "blue-2", "blue-3", "blue-4", "yellow", "white"],
+      options: [
+        "blue-1",
+        "blue-2",
+        "blue-3",
+        "blue-4",
+        "yellow",
+        "white",
+        "grey",
+        "grey-2",
+        "grey-3",
+        "green",
+      ],
       control: {
         type: "select",
         labels: {
@@ -50,6 +61,10 @@ const meta = {
           "blue-4": "Blue 4",
           yellow: "Yellow",
           white: "White",
+          grey: "Grey",
+          "grey-2": "Grey 2",
+          "grey-3": "Grey 3",
+          green: "Green",
         },
       },
     },

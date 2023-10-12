@@ -1,0 +1,56 @@
+{
+  "header": {
+    "services": [
+      {
+        "id": "1",
+        "name": "Hotel",
+        "icon": "https://imageupload.io/ib/9xdkomYgNS2taol_1696833971.webp",
+        "path": "/",
+        "enable": true
+      },
+      {
+        "id": "2",
+        "name": "Car",
+        "icon": "https://imageupload.io/ib/tzlq8mhXru9UxeQ_1696833971.webp",
+        "path": "/car",
+        "enable": false
+      },
+      {
+        "id": "3",
+        "name": "Cruise",
+        "icon": "https://imageupload.io/ib/4e9Ll5IZC1pM77C_1696833971.webp",
+        "path": "/cruise",
+        "enable": false
+      },
+      {
+        "id": "4",
+        "name": "Flight",
+        "icon": "https://imageupload.io/ib/c8y2zUTpAAwiaU7_1696833971.webp",
+        "path": "/flight",
+        "enable": false
+      },
+      {
+        "id": "5",
+        "name": "Activity",
+        "icon": "https://imageupload.io/ib/5Afy6TOCtsYYPTs_1696833971.webp",
+        "path": "/activity",
+        "enable": false
+      },
+      {
+        "id": "6",
+        "name": "Holiday Rental",
+        "icon": "https://imageupload.io/ib/gc4DLzbB7Dp2Xi0_1696833972.webp",
+        "path": "/holiday",
+        "enable": false
+      },
+      {
+        "id": "7",
+        "name": "Tour",
+        "icon": "https://imageupload.io/ib/1CQcVFyzoBpil9u_1696833971.webp",
+        "path": "/tour",
+        "enable": false
+      }
+    ]
+  },
+  "footer": {}
+}

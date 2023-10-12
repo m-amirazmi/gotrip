@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "@fontsource-variable/jost";
 import "@/styles/base.css";
 import Header from "@/components/header/header";
-import homepageData from "@/data/homepage.json";
+import content from "@/content/global.content.json";
 
 export const metadata: Metadata = {
   title: "GoTrip",
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header services={homepageData.services} />
+        <Header services={content.header.services} />
         {children}
       </body>
     </html>

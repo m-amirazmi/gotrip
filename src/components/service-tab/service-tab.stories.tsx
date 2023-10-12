@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import ServiceTab from "./service-tab";
-import mockData from "../../data/homepage.json";
+import content from "../../content/global.content.json";
 
 const meta = {
   title: "Shared/Service Tab",
@@ -61,7 +61,7 @@ export const Default: Story = {
     variant: "ghost",
     size: "small",
     showIcon: false,
-    items: mockData.services,
+    items: content.header.services,
   },
   render: (args) => {
     return (

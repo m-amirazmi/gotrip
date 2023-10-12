@@ -5,24 +5,31 @@ import Container from "../container/container";
 import Image from "next/image";
 import Button from "../button/button";
 
-interface HeroProps {}
+export default function Hero({ content }: HeroProps) {
+  if (!content) return;
 
-export default function Hero({}: HeroProps) {
   return (
     <section className={cx(styles["root"])}>
       {/* Hero Title & Subtitle */}
       <Container>
         <div className={cx(styles["content"])}>
           <Text tag="h1" className={cx(styles["title"])}>
-            <Text tag="span">Where Would</Text>
+            {content.titleLine1 && (
+              <Text tag="span" color="yellow">
+                {content.titleLine1}
+              </Text>
+            )}
             <br />
-            <Text tag="span">You Like To Go?</Text>
+            {content.titleLine2 && (
+              <Text tag="span" color="white">
+                {content.titleLine2}
+              </Text>
+            )}
           </Text>
-          <Text tag="p" className={cx(styles["subtitle"])}>
-            Checkout Beautiful Places Arround the World.
+          <Text color="white" tag="p" className={cx(styles["subtitle"])}>
+            {content.subtitle}
           </Text>
         </div>
-        {/* Hero Search */}
         <div className={cx(styles["images"])}>
           <Image
             src="https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp"
@@ -50,16 +57,34 @@ export default function Hero({}: HeroProps) {
         </div>
         <div className={cx(styles["search"])}>
           <div className={cx(styles["input"])}>
-            <Text tag="span">Location</Text>
-            <input placeholder="Where are you going?" />
+            <Text tag="span">{content.inputLabel1}</Text>
+            <Button
+              variant="text"
+              color="grey-3"
+              className={cx(styles["placeholder"])}
+            >
+              {content.inputPlaceholder1}
+            </Button>
           </div>
           <div className={cx(styles["input"])}>
-            <Text tag="span">Check in - Check out</Text>
-            <input placeholder="Wed 2 Mar - Fri 11 Apr" />
+            <Text tag="span">{content.inputLabel2}</Text>
+            <Button
+              variant="text"
+              color="grey-3"
+              className={cx(styles["placeholder"])}
+            >
+              {content.inputPlaceholder2}
+            </Button>
           </div>
           <div className={cx(styles["input"])}>
-            <Text tag="span">Guest</Text>
-            <input placeholder="2 adults - 1 children - 1 room" />
+            <Text tag="span">{content.inputLabel3}</Text>
+            <Button
+              variant="text"
+              color="grey-3"
+              className={cx(styles["placeholder"])}
+            >
+              {content.inputPlaceholder3}
+            </Button>
           </div>
           <Button color="yellow" size="large">
             Search
@@ -69,4 +94,18 @@ export default function Hero({}: HeroProps) {
       <div className={cx(styles["bg"])}></div>
     </section>
   );
+}
+
+interface HeroProps {
+  content: {
+    titleLine1: string;
+    titleLine2: string;
+    subtitle: string;
+    inputPlaceholder1: string;
+    inputLabel1: string;
+    inputPlaceholder2: string;
+    inputLabel2: string;
+    inputPlaceholder3: string;
+    inputLabel3: string;
+  };
 }

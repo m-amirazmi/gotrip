@@ -1,9 +1,16 @@
 import Hero from "@/components/hero/hero";
+import pageContent from "@/content/page.home.json";
+import { homepageSections as sections } from "@/components/";
 
 export default function HomePage() {
+  console.log("trigger here?");
   return (
     <main>
-      <Hero />
+      {pageContent.sections.map((i) => {
+        const Component = sections[i];
+        if (!Component) return null;
+        return <Component key={i} />;
+      })}
       {/* 1. Service Tabs - (Container) */}
       {/* 2. Hero - (Container)*/}
       {/* 3. Brand USP - (Container, Card, Column)  */}

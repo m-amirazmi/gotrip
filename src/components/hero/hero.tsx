@@ -4,6 +4,7 @@ import Text from "../text/text";
 import Container from "../container/container";
 import Image from "next/image";
 import Button from "../button/button";
+import HeroSearch, { IHeroSearchInput } from "../hero-search/hero-search";
 
 export default function Hero({ content }: HeroProps) {
   if (!content) return;
@@ -55,41 +56,7 @@ export default function Hero({ content }: HeroProps) {
             />
           </div>
         </div>
-        <div className={cx(styles["search"])}>
-          <div className={cx(styles["input"])}>
-            <Text tag="span">{content.inputLabel1}</Text>
-            <Button
-              variant="text"
-              color="grey-3"
-              className={cx(styles["placeholder"])}
-            >
-              {content.inputPlaceholder1}
-            </Button>
-          </div>
-          <div className={cx(styles["input"])}>
-            <Text tag="span">{content.inputLabel2}</Text>
-            <Button
-              variant="text"
-              color="grey-3"
-              className={cx(styles["placeholder"])}
-            >
-              {content.inputPlaceholder2}
-            </Button>
-          </div>
-          <div className={cx(styles["input"])}>
-            <Text tag="span">{content.inputLabel3}</Text>
-            <Button
-              variant="text"
-              color="grey-3"
-              className={cx(styles["placeholder"])}
-            >
-              {content.inputPlaceholder3}
-            </Button>
-          </div>
-          <Button color="yellow" size="large">
-            Search
-          </Button>
-        </div>
+        <HeroSearch content={content["hero-search"]} />
       </Container>
       <div className={cx(styles["bg"])}></div>
     </section>
@@ -101,11 +68,11 @@ interface HeroProps {
     titleLine1: string;
     titleLine2: string;
     subtitle: string;
-    inputPlaceholder1: string;
-    inputLabel1: string;
-    inputPlaceholder2: string;
-    inputLabel2: string;
-    inputPlaceholder3: string;
-    inputLabel3: string;
+    "hero-search": {
+      inputs: IHeroSearchInput[];
+      button: {
+        label: string;
+      };
+    };
   };
 }

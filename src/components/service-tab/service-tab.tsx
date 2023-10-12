@@ -24,10 +24,6 @@ export default function ServiceTab({
     setSelected(items[0].id);
   }, [items]);
 
-  useEffect(() => {
-    console.log(params);
-  }, [params]);
-
   const handleSelected = ({ id, path }: IServiceTabItem) => {
     router.push(path);
     setSelected(id);

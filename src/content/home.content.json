@@ -3,12 +3,28 @@
     "titleLine1": "Where Would",
     "titleLine2": "You Like To Go?",
     "subtitle": "Checkout Beautiful Places Arround the World.",
-    "inputLabel1": "Location",
-    "inputPlaceholder1": "Where are you going?",
-    "inputLabel2": "Check in - Check out",
-    "inputPlaceholder2": "Wed 2 Mar - Fri 11 Apr",
-    "inputLabel3": "No. of Guest",
-    "inputPlaceholder3": "2 adults - 1 children - 1 room"
+    "hero-search": {
+      "inputs": [
+        {
+          "label": "Location",
+          "placeholder": "Where are you going?",
+          "id": "location"
+        },
+        {
+          "label": "Check in - Check out",
+          "placeholder": "Wed 2 Mar - Fri 11 Apr",
+          "id": "date"
+        },
+        {
+          "label": "No. of Guest",
+          "placeholder": "2 adults - 1 children - 1 room",
+          "id": "guest"
+        }
+      ],
+      "button": {
+        "label": "Search"
+      }
+    }
   },
   "best-seller": {},
   "popular-destinations": {},

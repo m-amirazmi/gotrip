@@ -13,7 +13,6 @@ export default function Button({
   onClick,
   href,
 }: ButtonProps) {
-  console.log(color);
   if (!children) return null;
 
   const classes = cx(

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Button from "../button/button";
 import myFlag from "../../assets/countries/my.svg";
 import Modal from "../modal/modal";
-import useScrolling from "@/hooks/useScrolling";
+import useScrolling from "../../hooks/useScrolling";
 
 interface CurrencyCountrySwitcherProps {}
 

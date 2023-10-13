@@ -70,8 +70,11 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
   ],
+  "popular-destinations": {
+    "title": "Connect With Other Travellers",
+    "subtitle": "These popular destinations have a lot to offer"
+  },
   "best-seller": {},
-  "popular-destinations": {},
   "reviews": {},
   "articles": {},
   "newsletter": {},

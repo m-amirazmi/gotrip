@@ -10,7 +10,7 @@ import logo from "../../assets/logo.webp";
 import styles from "./header.module.css";
 import CurrencyCountrySwitcher from "../currency-country-switcher/currency-country-switcher";
 import Link from "next/link";
-import useScrolling from "@/hooks/useScrolling";
+import useScrolling from "../../hooks/useScrolling";
 
 export default function Header({ services }: HeaderProps) {
   const { isScrolling } = useScrolling();

@@ -1,8 +1,10 @@
 {
   "hero": {
-    "titleLine1": "Where Would",
-    "titleLine2": "You Like To Go?",
-    "subtitle": "Checkout Beautiful Places Arround the World.",
+    "hero-title": {
+      "title-line-1": "Where Would",
+      "title-line-2": "You Like To Go?",
+      "subtitle": "Checkout Beautiful Places Arround the World."
+    },
     "hero-search": {
       "inputs": [
         {
@@ -24,6 +26,22 @@
       "button": {
         "label": "Search"
       }
+    },
+    "hero-images": {
+      "main": {
+        "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+        "alt": "hero-1.webp"
+      },
+      "sub": [
+        {
+          "src": "https://imageupload.io/ib/4CapgcuEhgz8cPj_1696875653.webp",
+          "alt": "hero-2.webp"
+        },
+        {
+          "src": "https://imageupload.io/ib/KmK56xModX8JdGv_1696875653.webp",
+          "alt": "hero-3.webp"
+        }
+      ]
     }
   },
   "best-seller": {},

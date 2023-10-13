@@ -1,22 +1,22 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import HeroSearch from "./hero-search";
+import HeroImages from "./hero-images";
 import { hero as content } from "../../content/home.content.json";
 
 const meta = {
-  title: "Section/Hero/HeroSearch",
-  component: HeroSearch,
+  title: "Section/Hero/HeroImages",
+  component: HeroImages,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof HeroSearch>;
+} satisfies Meta<typeof HeroImages>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    content: content["hero-search"],
+    content: content["hero-images"],
   },
 };

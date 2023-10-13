@@ -3,7 +3,7 @@ import Hero from "./hero";
 import content from "../../content/home.content.json";
 
 const meta = {
-  title: "Shared/Hero",
+  title: "Section/Hero",
   component: Hero,
   parameters: {},
   tags: ["autodocs"],

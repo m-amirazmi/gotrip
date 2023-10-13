@@ -1,7 +1,7 @@
 import cx from "classnames";
 import styles from "./hero-search.module.css";
-import Text from "@/components/text/text";
-import Button from "@/components/button/button";
+import Text from "../text/text";
+import Button from "../button/button";
 
 export default function HeroSearch({ content }: HeroSearchProps) {
   return (

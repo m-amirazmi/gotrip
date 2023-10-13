@@ -46,14 +46,62 @@ export const Default: Story = {
     gap: "sm",
     children: (
       <>
-        <div style={{ background: "red", padding: "24px" }}>Column 1</div>
-        <div style={{ background: "green", padding: "24px" }}>Column 2</div>
-        <div style={{ background: "blue", padding: "24px" }}>Column 3</div>
-        <div style={{ background: "purple", padding: "24px" }}>Column 4</div>
-        <div style={{ background: "yellow", padding: "24px" }}>Column 5</div>
-        <div style={{ background: "orange", padding: "24px" }}>Column 6</div>
-        <div style={{ background: "brown", padding: "24px" }}>Column 7</div>
-        <div style={{ background: "pink", padding: "24px" }}>Column 8</div>
+        <div
+          style={{
+            background: "red",
+            padding: "24px",
+            boxSizing: "border-box",
+          }}
+        ></div>
+        <div
+          style={{
+            background: "green",
+            padding: "24px",
+            boxSizing: "border-box",
+          }}
+        ></div>
+        <div
+          style={{
+            background: "blue",
+            padding: "24px",
+            boxSizing: "border-box",
+          }}
+        ></div>
+        <div
+          style={{
+            background: "purple",
+            padding: "24px",
+            boxSizing: "border-box",
+          }}
+        ></div>
+        <div
+          style={{
+            background: "yellow",
+            padding: "24px",
+            boxSizing: "border-box",
+          }}
+        ></div>
+        <div
+          style={{
+            background: "orange",
+            padding: "24px",
+            boxSizing: "border-box",
+          }}
+        ></div>
+        <div
+          style={{
+            background: "brown",
+            padding: "24px",
+            boxSizing: "border-box",
+          }}
+        ></div>
+        <div
+          style={{
+            background: "pink",
+            padding: "24px",
+            boxSizing: "border-box",
+          }}
+        ></div>
       </>
     ),
   },

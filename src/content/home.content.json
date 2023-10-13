@@ -44,9 +44,34 @@
       ]
     }
   },
+  "usp": [
+    {
+      "image": {
+        "src": "https://imageupload.io/ib/YDFS8RwSMhB34SF_1697204970.webp",
+        "alt": "best-price-guarantee"
+      },
+      "title": "Best Price Guarantee",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "image": {
+        "src": "https://imageupload.io/ib/TuZDomODixcvmWu_1697209121.webp",
+        "alt": "Easy & Quick Booking"
+      },
+      "title": "Easy & Quick Booking",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "image": {
+        "src": "https://imageupload.io/ib/h33ygPgRVwcjc2H_1697209121.webp",
+        "alt": "Customer Care 24/7"
+      },
+      "title": "Customer Care 24/7",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ],
   "best-seller": {},
   "popular-destinations": {},
-  "usp": {},
   "reviews": {},
   "articles": {},
   "newsletter": {},

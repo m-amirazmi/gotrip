@@ -1,9 +1,6 @@
-import Container from "@/components/container/container";
 import Hero from "@/components/hero/hero";
 import PopularDestination from "@/components/popular-destination/popular-destination";
-import ServiceTab from "@/components/service-tab/service-tab";
 import Spacer from "@/components/spacer/spacer";
-import Title from "@/components/title/title";
 import Usp from "@/components/usp/usp";
 import content from "@/content/home.content.json";
 

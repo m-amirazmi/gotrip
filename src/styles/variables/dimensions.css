@@ -2,4 +2,8 @@
   --height-hero: 770px;
 
   --width-container: 1322px;
+
+  --gap-sm: 24px;
+  --gap-md: 32px;
+  --gap-lg: 48px;
 }

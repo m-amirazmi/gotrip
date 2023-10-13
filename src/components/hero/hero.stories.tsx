@@ -6,7 +6,6 @@ const meta = {
   title: "Section/Hero",
   component: Hero,
   parameters: {},
-  tags: ["autodocs"],
   argTypes: {},
 } satisfies Meta<typeof Hero>;
 

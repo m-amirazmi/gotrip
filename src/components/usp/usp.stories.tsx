@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Usp from "./usp";
+import content from "../../content/home.content.json";
 
 const meta = {
   title: "Shared/Usp",
@@ -15,5 +16,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {},
+  args: { content: content.usp },
 };

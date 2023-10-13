@@ -4,6 +4,10 @@
   margin-left: auto;
 }
 
+.root.scrolling .separator {
+  animation: to-scroll ease-out 500ms 500ms forwards;
+}
+
 .root .separator {
   width: 1px;
   height: 20px;
@@ -18,4 +22,13 @@
 
 .root .flag {
   border-radius: 50%;
+}
+
+@keyframes to-scroll {
+  0% {
+    background-color: var(--color-white-30);
+  }
+  100% {
+    background-color: var(--color-blue-4-30);
+  }
 }

@@ -5,20 +5,23 @@ import Image from "next/image";
 import Button from "../button/button";
 import myFlag from "../../assets/countries/my.svg";
 import Modal from "../modal/modal";
+import useScrolling from "@/hooks/useScrolling";
 
 interface CurrencyCountrySwitcherProps {}
 
 export default function CurrencyCountrySwitcher({}: CurrencyCountrySwitcherProps) {
   const [modalType, setModalType] = useState<"currency" | "country" | "">("");
 
+  const { isScrolling } = useScrolling();
+
   const handleOpenModal = (type: "currency" | "country" | "") => {
     setModalType(type);
   };
 
   return (
-    <div className={cx(styles["root"])}>
+    <div className={cx(styles["root"], isScrolling && styles["scrolling"])}>
       <Button
-        color="white"
+        color={isScrolling ? "blue-4" : "white"}
         variant="text"
         onClick={() => handleOpenModal("currency")}
       >
@@ -27,7 +30,7 @@ export default function CurrencyCountrySwitcher({}: CurrencyCountrySwitcherProps
       <div className={cx(styles["separator"])}></div>
       <Button
         className={cx(styles["country"])}
-        color="white"
+        color={isScrolling ? "blue-4" : "white"}
         variant="text"
         onClick={() => handleOpenModal("country")}
       >

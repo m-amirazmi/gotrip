@@ -5,6 +5,11 @@
   z-index: 10;
 }
 
+.root.scrolling {
+  animation: to-bg forwards 500ms ease-out 500ms;
+  color: var(--color-blue4);
+}
+
 .root .container {
   display: flex;
   align-items: center;
@@ -16,6 +21,48 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.root .hidden {
+  animation: to-hidden forwards 500ms ease-out;
+}
+
+.root .show {
+  animation: to-show forwards 500ms ease-out;
+}
+
+.scrolling a,
+.scrolling button {
+  transition: all 500ms ease-out 500ms;
+}
+
+@keyframes to-hidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes to-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes to-bg {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--color-white);
+    box-shadow: 0px 20px 40px 0px rgba(5, 16, 54, 0.1);
+  }
 }
 
 .sb-root {

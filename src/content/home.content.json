@@ -72,7 +72,121 @@
   ],
   "popular-destinations": {
     "title": "Connect With Other Travellers",
-    "subtitle": "These popular destinations have a lot to offer"
+    "subtitle": "These popular destinations have a lot to offer",
+    "items": [
+      {
+        "title": "Kuala Lumpur",
+        "description": "147,681 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Johor",
+        "description": "145,784 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Kedah",
+        "description": "132,109 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Kelantan",
+        "description": "126,537 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Melaka",
+        "description": "120,369 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Negeri Sembilan",
+        "description": "112,284 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Pahang",
+        "description": "107,490 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Penang",
+        "description": "103,017 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Perak",
+        "description": "98,865 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Perlis",
+        "description": "94,023 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Sabah",
+        "description": "89,491 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Sarawak",
+        "description": "85,168 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Selangor",
+        "description": "80,947 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Terengganu",
+        "description": "77,217 travellers",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      }
+    ]
   },
   "best-seller": {},
   "reviews": {},

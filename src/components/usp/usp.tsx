@@ -16,6 +16,7 @@ export default function Usp({ content }: UspProps) {
               image={i.image}
               title={i.title}
               description={i.description}
+              variant="icon"
             />
           ))}
         </Column>

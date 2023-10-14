@@ -9,16 +9,24 @@ export default function Card({
   title,
   description,
   shadow = false,
+  variant = "icon",
 }: CardProps) {
   return (
-    <div className={cx(styles["root"], shadow && styles["shadow"])}>
-      <Image
-        className={cx(styles["image"])}
-        src={image.src}
-        alt={image.alt}
-        width={70}
-        height={70}
-      />
+    <div
+      className={cx(
+        styles["root"],
+        styles[variant],
+        shadow && styles["shadow"]
+      )}
+    >
+      <div className={cx(styles["image"])}>
+        {variant === "icon" && (
+          <Image src={image.src} alt={image.alt} width={70} height={70} />
+        )}
+        {variant.includes("info") && (
+          <Image src={image.src} alt={image.alt} fill />
+        )}
+      </div>
       <Text tag="h5" color="blue-4">
         {title}
       </Text>
@@ -34,4 +42,5 @@ interface CardProps {
   title: string;
   description: string;
   shadow?: boolean;
+  variant: "info-square" | "info-portrait" | "icon";
 }

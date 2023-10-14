@@ -1,6 +1,9 @@
 .root {
   display: block;
 }
+.xs {
+  height: 40px;
+}
 .sm {
   height: 64px;
 }

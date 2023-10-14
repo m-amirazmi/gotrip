@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "@fontsource-variable/jost";
-import "@/styles/base.css";
 import Header from "@/components/header/header";
 import content from "@/content/global.content.json";
+import "@/styles/base.css";
+import "swiper/css";
 
 export const metadata: Metadata = {
   title: "GoTrip",

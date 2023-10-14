@@ -2,7 +2,7 @@ import cx from "classnames";
 import styles from "./spacer.module.css";
 
 interface SpacerProps {
-  size?: "sm" | "md" | "lg";
+  size?: "xs" | "sm" | "md" | "lg";
 }
 
 export default function Spacer({ size = "md" }: SpacerProps) {

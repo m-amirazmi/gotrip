@@ -10,10 +10,11 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {
     size: {
-      options: ["sm", "md", "lg"],
+      options: ["xs", "sm", "md", "lg"],
       control: {
         type: "select",
         labels: {
+          xs: "Extra Small Space",
           sm: "Small Space",
           md: "Medium Space",
           lg: "Large Space",

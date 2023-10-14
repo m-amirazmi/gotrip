@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
 import "@fontsource-variable/jost";
 import "../src/styles/base.css";
+import "swiper/css";
 
 const preview: Preview = {
   parameters: {

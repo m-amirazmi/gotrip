@@ -8,7 +8,19 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  argTypes: {},
+  argTypes: {
+    variant: {
+      options: ["icon", "info-portrait", "info-square"],
+      control: {
+        type: "select",
+        labels: {
+          icon: "Icon Card",
+          "info-portrait": "Info Portrait Card",
+          "info-square": "Info Square Card",
+        },
+      },
+    },
+  },
 } satisfies Meta<typeof Card>;
 
 export default meta;
@@ -23,5 +35,19 @@ export const Default: Story = {
     title: "Best Price Guarantee",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     shadow: true,
+    variant: "icon",
+  },
+};
+
+export const InfoPotraitCard: Story = {
+  args: {
+    image: {
+      src: "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+      alt: "demo",
+    },
+    title: "Best Price Guarantee",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    // shadow: true,
+    variant: "info-portrait",
   },
 };

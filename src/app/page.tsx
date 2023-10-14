@@ -1,5 +1,6 @@
+import BestSeller from "@/components/best-seller/best-seller";
 import Hero from "@/components/hero/hero";
-import PopularDestination from "@/components/popular-destination/popular-destination";
+import TitleSlider from "@/components/title-slider/title-slider";
 import Spacer from "@/components/spacer/spacer";
 import Usp from "@/components/usp/usp";
 import content from "@/content/home.content.json";
@@ -7,18 +8,16 @@ import content from "@/content/home.content.json";
 export default function HomePage() {
   return (
     <main>
-      {/* 2. Hero - (Container)*/}
       <Hero content={content.hero} />
-      {/* 3. Brand USP - (Container, Card, Column)  */}
       <Spacer />
       <Usp content={content.usp} />
       <Spacer />
-      <PopularDestination content={content["popular-destinations"]} />
+      <TitleSlider content={content["popular-destinations"]} column={5} />
       <Spacer />
-      {/* 4. Popular Destination - (Container, Slider, Card, Title) */}
-      {/* 5. Best Seller - (Container, Slider, Card, Title) */}
-      {/* 6. Feedback - (Container, Title)*/}
-      {/* 7. Blog List - (Container, Card, Column, Title) */}
+      {/* <BestSeller /> */}
+      {/* <Spacer /> */}
+      <TitleSlider content={content["articles"]} aspectRatio="square" />
+      <Spacer />
       {/* 8. Newsletter - (Container, Title) */}
       {/* 9. App Download - (Container, Title) */}
       {/* 10. Membership - (Container, Title) */}

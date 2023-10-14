@@ -190,7 +190,44 @@
   },
   "best-seller": {},
   "reviews": {},
-  "articles": {},
+  "articles": {
+    "title": "Get inspiration for your next trip",
+    "subtitle": "Interdum et malesuada fames",
+    "items": [
+      {
+        "title": "10 European ski destinations you should visit this winter",
+        "description": "April 06, 2022",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Booking travel during Corona: good advice in an uncertain time",
+        "description": "April 06, 2022",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "Where can I go? 5 amazing countries that are open right now",
+        "description": "April 06, 2022",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      },
+      {
+        "title": "The best times & places to see the Northern Lights in Iceland",
+        "description": "April 06, 2022",
+        "image": {
+          "src": "https://imageupload.io/ib/D8pWEwti3nCPfUC_1696875653.webp",
+          "alt": "demo"
+        }
+      }
+    ]
+  },
   "newsletter": {},
   "app-download": {},
   "become-member": {}

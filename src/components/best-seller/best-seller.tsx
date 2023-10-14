@@ -1,8 +1,19 @@
 import cx from "classnames";
 import styles from "./best-seller.module.css";
-
-interface BestSellerProps {}
+import Title from "../title/title";
+import Container from "../container/container";
 
 export default function BestSeller({}: BestSellerProps) {
-  return <div className={cx(styles["root"])}>BestSeller Component</div>;
+  return (
+    <div className={cx(styles["root"])}>
+      <Container>
+        <Title
+          title="Best Seller"
+          subtitle="Interdum et malesuada fames ac ante ipsum"
+        />
+      </Container>
+    </div>
+  );
 }
+
+interface BestSellerProps {}

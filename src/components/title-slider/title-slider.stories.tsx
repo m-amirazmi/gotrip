@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import PopularDestination from "./popular-destination";
+import TitleSlider from "./title-slider";
 import content from "../../content/home.content.json";
 
 const meta = {
-  title: "Shared/PopularDestination",
-  component: PopularDestination,
+  title: "Shared/TitleSlider",
+  component: TitleSlider,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof PopularDestination>;
+} satisfies Meta<typeof TitleSlider>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
